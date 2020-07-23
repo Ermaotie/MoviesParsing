@@ -1,5 +1,5 @@
 body{
-    background: #ccc url(./imgs/bg.jpg) no-repeat center center;
+    background: #ccc url(../imgs/bg.jpg) no-repeat center center;
     background-size: cover;
 }
 .main{
