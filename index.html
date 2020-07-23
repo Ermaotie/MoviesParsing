@@ -8,29 +8,28 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
         <script src="./js/background.js"></script>
     </head>
-    <body>
-        <div id="gradient"></div>
-        <script>
-            function play()
-            {
-                if (document.getElementById("input").value!="")
-                window.open(document.getElementsByTagName("select")[0].value + document.getElementById("input").value,"_blank")
-            }
-        </script>
-        <div class="main">
-        <br>
-        <h4>请选择路线</h4>
-        <br>
-        <select>
-            <option value="https://api.sigujx.com/?url=" id=1>1</option>
-            <option value="https://jx.zz22x.com/jx/api.php?url=" id=2>2</option>
-            <option value="https://jx40.net/url=" id=3>3</option>
-            <option value="https://www.8090g.cn/jiexi/?url=" id=4>4</option>
-          </select>
-        <input type="text" name="url" placeholder="请将影片地址复制于此" id="input" style="width:170px">
-        <br><br>
-        <button class="demo" onclick="play()">立即播放</button>
-        </div>
+    <body id="gradient">
+            <script>
+                function play()
+                {
+                    if (document.getElementById("input").value!="")
+                    window.open(document.getElementsByTagName("select")[0].value + document.getElementById("input").value,"_blank")
+                }
+            </script>
+            <div class="main">
+            <br>
+            <h4>请选择路线</h4>
+            <br>
+            <select>
+                <option value="https://api.sigujx.com/?url=" id=1>1</option>
+                <option value="https://jx.zz22x.com/jx/api.php?url=" id=2>2</option>
+                <option value="https://jx40.net/url=" id=3>3</option>
+                <option value="https://www.8090g.cn/jiexi/?url=" id=4>4</option>
+            </select>
+            <input type="text" name="url" placeholder="请将影片地址复制于此" id="input" style="width:170px">
+            <br><br>
+            <button class="demo" onclick="play()">立即播放</button>
+            </div>
         
     </body>
 </html>
